@@ -55,6 +55,7 @@ if os.path.exists(server_log):
 else:
     print 'Could not locate "server.log" - try adding the full path to the log file as an argument, or simply running ' \
           'this script in the same directory as the server.log file'
+    sys.exit(1)
 
 online = {}
 totals = {}
